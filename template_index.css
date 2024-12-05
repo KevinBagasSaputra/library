@@ -1,0 +1,218 @@
+*,
+html,
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Open sans, sans-serif;
+}
+
+/* Navbar START */
+header{
+    width: 100%;
+    background-color: #333;
+}
+
+header nav{
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    list-style-type: none;
+    align-content: center;
+}
+
+header nav ul li a .logo{
+    display: flex;
+}
+
+header nav ul li a .logo p{
+    margin-left: 10px;
+    align-content: center;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Navbar END */
+
+
+
+
+
+
+
+/* Hero START */
+.hero{
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('../Blade_Templating_Engine/background/hero.png');
+    background-size: cover;
+    background-position: center;
+}.hero .wrap{
+    width: 100%;
+    background-color: #33333388;
+}
+
+.hero .container{
+    padding: 10px;
+}
+
+.hero .container ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .container ul .group{
+    max-width: 800px;
+    margin: 150px auto;
+}
+
+.hero .container ul .group h2{
+    color: #fff;
+    font-weight: 800;
+}
+
+.hero .container ul .group p{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.hero .container ul .group a{
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+
+    transition: all ease 550ms;
+    background-color: #009900;
+}
+
+.hero .container ul .group a:hover i{
+    margin: 0 10px;
+
+    transition:  all ease-out 100ms;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    background-color: unset;
+}
+
+.hero .container ul .group a i{
+    transition: all ease-in 300ms;
+    background-color:unset;
+}
+
+
+/* Hero END */
+
+
+
+
+
+
+/* Main START */
+main{
+    background-color: #fff;
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    /* Sidebar */
+        aside{
+            background-color: #333;
+        }
+    /* Sidebar */
+
+    /* Article */
+        article{
+            background-color: #333;
+        }
+
+        article .container{
+            padding: 10px;
+        }
+
+        article .container ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+            /* Card 1 */
+                article .container ul .card-1{
+
+                }
+
+                article .container ul .card-1 img{
+                    min-width: 100px;
+                    max-width: 300px;
+                    
+                    min-height: 100px;
+                    max-height: 200px;
+                    object-fit: cover;
+                }
+            /* Card 1 */
+    /* Article */
+/* Main END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+@media (min-width: 767px){
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+
+
+
+
+
+@media( min-width: 1024px){
+    aside{
+        flex: 1;
+        order: 2;
+
+        background-color: #333;
+    }
+
+    article{
+        flex: 3;
+        order: 1;
+
+        background-color: #333;
+    }
+}
+/* Responsive */
